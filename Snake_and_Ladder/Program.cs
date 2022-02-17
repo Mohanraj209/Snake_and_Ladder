@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 namespace Snake_and_Ladder
 
 {
-    public class Program
+     class Program
     {
         public static void Main()
         {
             Console.WriteLine("--------------Snake and Ladder Simulator-------------");
+            Simulator player1 = new Simulator();
+            player1.SnakeAndLadder();
         }
     }
 }
