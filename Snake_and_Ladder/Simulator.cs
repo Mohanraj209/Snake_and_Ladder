@@ -10,10 +10,15 @@ namespace Snake_and_Ladder
     {
         // Game related attributes declared here
         int Position = 0;
-        public void SnakeAndLadder()
+        public void Starting_Point()
         {
             Console.WriteLine("Initial Position: " + Position);
-
+        }
+        public void Dice_Roll()
+        {
+            Random random = new Random();
+            int Roll = random.Next(1, 7);
+            Console.WriteLine("Dice Number: " + Roll);
         }
 
     }

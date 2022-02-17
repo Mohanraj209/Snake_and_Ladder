@@ -13,7 +13,9 @@ namespace Snake_and_Ladder
         {
             Console.WriteLine("--------------Snake and Ladder Simulator-------------");
             Simulator player1 = new Simulator();
-            player1.SnakeAndLadder();
+            player1.Starting_Point();
+            player1.Dice_Roll();
+            
         }
     }
 }
