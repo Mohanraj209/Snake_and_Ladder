@@ -21,7 +21,9 @@ namespace Snake_and_Ladder
             Console.WriteLine("Dice Number: " + Roll);
             Position += Roll;
             Option(Roll);
+            Endpoint();
             Starting_Point();
+            
         }
 
         public void Option(int Roll)
@@ -52,7 +54,22 @@ namespace Snake_and_Ladder
             }
 
         }
+        // Checks if position reaches 100
+        public void Endpoint()
+        {
+            if (Position < 0)
+                Position = 0;
+            else if (Position >= 100)
+                Position = 100;
+        }
 
+        // This will roll die untill player wins
+        public void Win_position()
+        {
+            while (Position < 100)
+                Dice_Roll();
+            Console.WriteLine("Congratulations!! you Won");
+        }
 
     }
 
