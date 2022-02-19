@@ -10,6 +10,7 @@ namespace Snake_and_Ladder
     {
         // Game related attributes declared here
         int Position = 0;
+        int Count = 0;
         public void Starting_Point()
         {
             Console.WriteLine("Initial Position: " + Position);
@@ -20,10 +21,10 @@ namespace Snake_and_Ladder
             int Roll = random.Next(1, 7);
             Console.WriteLine("Dice Number: " + Roll);
             Position += Roll;
+            Count++;
             Option(Roll);
             Endpoint();
             Starting_Point();
-            
         }
 
         public void Option(int Roll)
@@ -69,10 +70,13 @@ namespace Snake_and_Ladder
             while (Position < 100)
                 Dice_Roll();
             Console.WriteLine("Congratulations!! you Won");
+            Console.WriteLine("Number of times die rolled is :: " + Count);
         }
 
+       
     }
-
 }
+
+
 
 
