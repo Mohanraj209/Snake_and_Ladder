@@ -15,8 +15,10 @@ namespace Snake_and_Ladder
             Simulator player1 = new Simulator();
             player1.Starting_Point();
             player1.Dice_Roll();
-            player1.Endpoint();
-            player1.Win_position();
+            player1.Endpoint1();
+            player1.Endpoint2();
+            player1.Win_position1();
+            player1.Win_position2();
             Console.ReadKey();
         }
     }
